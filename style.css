@@ -4,6 +4,11 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -28,6 +33,7 @@
     align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
+     font-size: 20px;
 }
 .todo-app h2 img{
     width: 30px;
@@ -124,4 +130,40 @@ ul li span:hover{
     color: #888;
     margin-top: 10px;
     font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+
+    .todo-app{
+        margin: 50px 10px;
+        padding: 25px 15px 40px;
+    }
+
+    .row{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+
+    button{
+        width: 100%;
+        padding: 12px;
+    }
+
+    ul li{
+        font-size: 15px;
+        padding: 12px 8px 12px 45px;
+    }
+}
+
+@media (max-width: 600px){
+    .todo-app h2{
+        font-size: 18px;
+    }
 }
